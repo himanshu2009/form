@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <div class="registration" id="registration">
+          <h2>Registration</h2>
+          <label for="">Personal Details</label>
+          <div class="details">
+            <div class="input-details">
+              <label>Full Name</label>
+              <input type="text" placeholder="Enter your name" />
+            </div>
+
+            <div class="input-details">
+              <label>Date of Birth</label>
+              <input type="date" placeholder="Enter birth date" />
+            </div>
+
+            <div class="input-details">
+              <label>Email id</label>
+              <input type="email" placeholder="Enter your email" />
+            </div>
+
+             <div class="input-details">
+              <label>Mobile Number</label>
+              <input type="number" placeholder="Enter mobile number" />
+            </div> 
+            <div class="input-details">
+              <label>Registration Number</label>
+              <input type="text" placeholder="Enter your Registration number" />
+            </div>
+
+            <div class="input-details">
+              <label>Gender</label>
+              <input type="" placeholder="Enter gender" />
+            </div>
+
+            <div class="input-details">
+              <label>Branch Name</label>
+              <input type="text" placeholder="Enter your Branch Name" />
+            </div>
+
+             <div class="input-details">
+              <label>Passout Year</label>
+              <input type="number" placeholder="Enter Passout Year" />
+            </div> 
+          </div>
+
+          <label for="">Identity Details</label>
+          <div class="details">
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+          </div>
+        </div>
+
+        <div class="address-details" id="address-details">
+          <h2>Address Details</h2>
+          <label for="">Personal Details</label>
+          <div class="details">
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+          </div>
+
+          <label for="">Identity Details</label>
+          <div class="details">
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+            <div class="input-details">
+              <label for="">Name</label>
+              <input type="text" placeholder="name" />
+            </div>
+          </div>
+
+          
+        </div>
+      </form>
+    </div>
+    <button type="submit" onclick="Myfunction()" class="button" id="next">
+      Next Page
+    </button>
+    <button type="submit" onclick="MyfunctionOne()" class="button" id="prev">
+      Prev Page
+    </button>
+
+    <script>
+      let registration = document.getElementById("registration");
+      let addres = document.getElementById("address-details");
+      let prev = document.getElementById("prev");
+      let next = document.getElementById("next");
+
+      function Myfunction() {
+        // registration.style.position = "absolute";
+        // registration.style.marginLeft = "-1465px";
+        registration.style.opacity = "0";
+        registration.style.transition = "1s";
+        registration.style.position = "absolute";
+        registration.style.marginLeft = "-2000px";
+        // addres.style.display = "flex";
+        // registration.style.display = "none";
+        prev.style.display = "block";
+        next.style.display = "none";
+        
+        addres.style.margin = "0px";
+        addres.style.opacity = "1";
+      }
+
+      function MyfunctionOne() {  
+        // registration.style.position = "absolute";    
+        registration.style.marginLeft = "0px";
+        registration.style.transition = "1s";
+        addres.style.display = "none";
+        next.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
